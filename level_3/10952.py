@@ -15,5 +15,5 @@
 
 a,b= map(int, input().split())
 
-for i in len(int(a+b)):
+for i in :
     print(a+b)
