@@ -11,8 +11,6 @@
 각 테스트 케이스마다 A+B를 출력한다.
 """
 # 몇 개를 입력받는지 알 수 없음 이때 while 문 사용?!
-a,b =map(int, input().split())
-
 while True:
     try:
         a,b =map(int, input().split())
