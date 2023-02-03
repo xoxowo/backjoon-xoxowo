@@ -12,8 +12,13 @@
 출력
 각 테스트 케이스마다 A+B를 출력한다.
 """
+# 여기서도 계속 입력받으므로 while True로 시작하면서
+# 입력값이 0 0이면 멈춤...ㅎ.. 어렵당
 
-a,b= map(int, input().split())
-
-for i in :
-    print(a+b)
+while True:
+    a,b =map(int, input().split())
+    if(a==0 and b ==0):
+        break
+    else:
+        print(a+b)
+    
