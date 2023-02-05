@@ -20,3 +20,5 @@ for i in range(n):
     if x > a[i]:
         c.append(a[i])
 print(*c)
+
+# 리스트 내부 출력하려면 * 을 붙이면된다!
