@@ -32,5 +32,7 @@ def hj():
             n= d(i)
             print(d)        
         
-
-print(hj())
+# 어려워~~~~~
+n= 0
+for i in range(1, 10001):
+    n 
