@@ -22,10 +22,8 @@ a: 합을 구해야 하는 정수 n개가 저장되어 있는 배열 (0 ≤ a[i]
 """
 
 def solve(a: list):
-    s=0
+    ans=0
     for i in range(len(a)):
-        s = s+ a[i]
-
-    return s 
-
+        ans = ans+ a[i]
+    return ans 
 print(solve([1,2,3,4,5]))

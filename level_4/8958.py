@@ -24,4 +24,4 @@ for i in range(n):
 # print(list)
 for i in range(len(list)):
     for j in list:
-        print(list[j])
+        print(list)
