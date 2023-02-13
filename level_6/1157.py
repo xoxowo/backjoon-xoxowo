@@ -11,11 +11,15 @@
 단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다.
 """
 
-n = str(input())
-c={}
-for i in range(len(n)):
-    if i in c :
-        c[i] = c[i]+1
-    else:
-        c[i] = 1
-print(c)
+n = input().upper() # 입력받은 알파벳 대문자로 변환하여 변수에 저장
+f = list(set(n)) # 중복된 알파벳 제거하여 리스트에 저장
+
+c=[]
+for i in range(len(f)):
+    c.append(f.count(f[i]))
+    print(c)
+m = max(c)
+if c.count(m) != 1:
+    print("?")
+else:
+    print(f[c.index(m)])
