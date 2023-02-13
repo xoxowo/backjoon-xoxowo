@@ -13,9 +13,5 @@
 첫째 줄에 단어의 개수를 출력한다.
 """
 
-a= str(input().split())
-
+a= len(input().split())
 print(a)
-
-# for _ in range(len(a)):
-#     if 
