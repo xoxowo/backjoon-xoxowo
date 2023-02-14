@@ -19,7 +19,4 @@
 s= list(map(ord,input()))
 print(s)
 
-for i in range(len(s)):
-    for j in range(97, 122):
-        if j in s :
-            
+
