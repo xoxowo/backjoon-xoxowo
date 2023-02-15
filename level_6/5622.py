@@ -23,14 +23,16 @@ s = input().upper()
 print(s)
 # 각 알파벳에 숫자가 있음
 # 숫자에 추가 1초가 걸림 2초는 3초, 3초는 4초 이렇게 
+# index()함수 사용하기
+le=0
 
-if s == 'A'and'B'and'C':
-    print(2)
-elif s == 'D'and'E'and'F':
-    print(3)
-elif s == 'G'and'H'and'I':
-    print(4)
-elif s == 'J'and'K'and'L':
-    print(5)
-elif s == 'M'and'N'and'O':
-    print(6)
+
+# 리스트로 단어 묶기
+number=['ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ']
+
+for i in s :
+    for j in number:
+        if i in j :
+            le +=number.index(j) +3
+
+print(le)
