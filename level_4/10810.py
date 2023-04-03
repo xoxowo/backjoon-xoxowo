@@ -56,12 +56,13 @@
 
 """
 
+n, m = map(int, input().split())
+list = [0] * n
 
-n, m= map(int, input().split())
-s=[]
-for a in range(n-1):
-    i,j,k =map(int, input().split())
-    print(i,j,k)
-    for e in range(j):
-        s += k
-print(s)
+for _ in range(m):
+    i,j,k = map(int, input().split())
+    for a in range(i, j+1, 1):
+        list[a-1]= k
+
+for i in range(n):
+    print(list[i], end=' ')
