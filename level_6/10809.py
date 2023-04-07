@@ -16,7 +16,12 @@
 """
 # find 함수사용하면 됨? 
 
-s= list(map(ord,input()))
-print(s)
+s= input()
+abc ='abcdefghijklmnopqrstuvwxyz'
 
+for i in abc :
+    if i in s:
+        print(s.index(i), end=' ')
+    else:
+        print(-1, end=' ')
 
