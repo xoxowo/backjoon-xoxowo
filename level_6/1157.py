@@ -9,17 +9,21 @@
 출력
 첫째 줄에 이 단어에서 가장 많이 사용된 알파벳을 대문자로 출력한다. 
 단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다.
+
+예제 입력           예제 출력
+Mississipi          ?
+
+zZa                 Z
+
+z                   Z
+
 """
 
 n = input().upper() # 입력받은 알파벳 대문자로 변환하여 변수에 저장
-f = list(set(n)) # 중복된 알파벳 제거하여 리스트에 저장
+print(n)
 
-c=[]
-for i in range(len(f)):
-    c.append(f.count(f[i]))
 
-m = max(c)
-if c.count(m) != 1:
-    print("?")
-else:
-    print(f[c.index(m)])
+# for _ in range(len(n)):
+    
+    
+# if 
