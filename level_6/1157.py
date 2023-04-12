@@ -19,11 +19,24 @@ z                   Z
 
 """
 
-n = input().upper() # 입력받은 알파벳 대문자로 변환하여 변수에 저장
-print(n)
+# n = input().upper() # 입력받은 알파벳 대문자로 변환하여 변수에 저장
+# print(n)
 
 
 # for _ in range(len(n)):
     
     
 # if 
+
+word = input().upper() # 입력받은 문자열을 대문자로 바꾼다.
+counts = [0] * 26      # 알파벳을 카운트할 리스트를 만든다.
+
+for c in word:
+    if c.isalpha():   # 알파벳이면
+        counts[ord(c) - ord('A')] += 1  # 해당 알파벳의 카운트를 1 증가시킨다.
+
+max_count = max(counts)  # 가장 많이 나온 알파벳의 카운트를 구한다.
+if counts.count(max_count) > 1:  # 최대 카운트를 가진 알파벳이 여러 개인 경우
+    print("?")
+else:  # 최대 카운트를 가진 알파벳이 하나인 경우
+    print(chr(counts.index(max_count) + ord('A')))
