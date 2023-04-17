@@ -15,10 +15,13 @@ aabbbccb는 b가 떨어져서 나타나기 때문에 그룹 단어가 아니다.
 첫째 줄에 그룹 단어의 개수를 출력한다.
 """
 
-c = int(input())
-n = []
-s= 0
-for i in range(c):
-    n.append(list(map(str, input().split())))
-    
-print(n)
+n = int(input())  # 단어의 개수 입력
+count = 0  # 그룹 단어의 개수를 저장할 변수
+
+for i in range(n):
+    word = input()  # 단어 입력
+    if list(word) == sorted(word, key=word.find):
+        # word를 문자 리스트로 바꾸어서, find() 함수를 이용해 첫 번째로 나타난 인덱스로 정렬한 것과 비교
+        count += 1
+
+print(count)
