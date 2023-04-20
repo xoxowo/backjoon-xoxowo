@@ -19,15 +19,6 @@ z                   Z
 
 """
 
-# n = input().upper() # 입력받은 알파벳 대문자로 변환하여 변수에 저장
-# print(n)
-
-
-# for _ in range(len(n)):
-    
-    
-# if 
-
 word = input().upper() # 입력받은 문자열을 대문자로 바꾼다.
 counts = [0] * 26      # 알파벳을 카운트할 리스트를 만든다.
 
