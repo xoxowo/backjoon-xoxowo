@@ -37,5 +37,5 @@ for _ in range(n):
 for i in range(0, n):
     for j in range(0, m):
         c[i][j] = a[i][j] + b[i][j]
-    print(*c[i])
+    print(*c[i]) # 리스트 내부 출력시 * 사용
 
